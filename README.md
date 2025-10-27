@@ -32,7 +32,9 @@ The Haberman's Survival dataset contains data from a study conducted at the Univ
 personalMLTerm4/
 ├── assignment01_DAMO-640-10.ipynb    # Main analysis notebook
 ├── README.md                         # Project documentation
-└── requirements.txt                  # Python dependencies
+├── requirements.txt                  # Python dependencies
+└── Report/                           # Assignment report and documentation
+    └── [Report files]                # Detailed analysis report
 ```
 
 ### Methodology
@@ -155,12 +157,25 @@ Dataset retrieved from: [UCI Machine Learning Repository - Haberman's Survival D
 
 This project is part of the DAMO-640-10 course curriculum, focusing on practical application of supervised learning techniques for binary classification problems in healthcare data analysis.
 
+### Assignment Report
+
+A comprehensive written report for this assignment is available in the `Report/` folder. The report includes:
+
+- **Detailed methodology explanation** - In-depth discussion of data preprocessing, PCA implementation, and model selection rationale
+- **Results analysis and interpretation** - Comprehensive analysis of model performance, statistical significance, and practical implications
+- **Comparative model evaluation** - Detailed comparison between Logistic Regression and Decision Tree performance
+- **Conclusions and recommendations** - Summary of findings and suggestions for future work
+- **References and citations** - Academic sources and technical documentation
+
+The report complements the Jupyter notebook by providing theoretical context, detailed explanations of methodological choices, and comprehensive interpretation of results suitable for academic evaluation.
+
 ### Usage Instructions
 
 1. Open the Jupyter notebook `assignment01_DAMO-640-10.ipynb`
 2. Run cells sequentially to reproduce the analysis
 3. All required datasets are loaded automatically from the UCI repository
 4. Modify hyperparameters or add additional models as needed for experimentation
+5. **Review the assignment report** in the `Report/` folder for detailed analysis and interpretation
 
 ### Future Enhancements
 

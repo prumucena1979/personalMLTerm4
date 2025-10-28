@@ -30,11 +30,11 @@ The Haberman's Survival dataset contains data from a study conducted at the Univ
 
 ```
 personalMLTerm4/
-├── assignment01_DAMO-640-10.ipynb    # Main analysis notebook
-├── README.md                         # Project documentation
-├── requirements.txt                  # Python dependencies
-└── Report/                           # Assignment report and documentation
-    └── [Report files]                # Detailed analysis report
+├── assignment01_DAMO-640-10_FINAL_REVISED.ipynb    # Main analysis notebook
+├── README.md                                       # Project documentation
+├── requirements.txt                                # Python dependencies
+└── Report/                                         # Assignment report and documentation
+    └── [Report files]                              # Detailed analysis report
 ```
 
 ### Methodology
@@ -46,18 +46,21 @@ personalMLTerm4/
 
 #### 2. Dimensionality Reduction
 - **Principal Component Analysis (PCA)**: Applied to reduce dimensionality while preserving ≥90% of variance
-- **Variance analysis**: Evaluated explained variance ratios for optimal component selection
+- **Optimal component selection**: Systematic selection of minimum components retaining 90% variance
+- **Cumulative variance visualization**: Plotted to determine optimal dimensionality
 
 #### 3. Machine Learning Models
-Two supervised learning algorithms were implemented and compared:
+Two supervised learning algorithms were implemented with systematic hyperparameter tuning:
 
 1. **Logistic Regression**
-   - Hyperparameter tuning: C values [0.1, 1.0]
-   - Cross-validation: 5-fold stratified
+   - Hyperparameter grid: C ∈ [0.1, 1.0]
+   - Cross-validation: 5-fold stratified with accuracy scoring
+   - Final model: Optimized parameters selected via GridSearchCV
 
 2. **Decision Tree Classifier**
-   - Hyperparameter tuning: max_depth [3, None]
-   - Cross-validation: 5-fold stratified
+   - Hyperparameter grid: max_depth ∈ [3, None]
+   - Cross-validation: 5-fold stratified with accuracy scoring
+   - Final model: Optimized parameters selected via GridSearchCV
 
 #### 4. Model Evaluation
 - **Cross-validation**: 5-fold stratified for hyperparameter selection
@@ -100,7 +103,7 @@ All project dependencies are listed in `requirements.txt`. The main requirements
 
 3. **Launch Jupyter Notebook:**
    ```bash
-   jupyter notebook assignment01_DAMO-640-10.ipynb
+   jupyter notebook assignment01_DAMO-640-10_FINAL_REVISED.ipynb
    ```
 
 #### Option 2: Virtual Environment (Recommended)
@@ -130,7 +133,7 @@ All project dependencies are listed in `requirements.txt`. The main requirements
 
 4. **Launch Jupyter Notebook:**
    ```bash
-   jupyter notebook assignment01_DAMO-640-10.ipynb
+   jupyter notebook assignment01_DAMO-640-10_FINAL_REVISED.ipynb
    ```
 
 #### Option 3: Manual Install
@@ -142,10 +145,15 @@ pip install pandas numpy scikit-learn matplotlib jupyter
 
 ### Results Summary
 
-The analysis provides comprehensive comparison between Logistic Regression and Decision Tree classifiers for predicting patient survival, including:
+The analysis provides comprehensive comparison between Logistic Regression and Decision Tree classifiers for predicting patient survival. **Key findings:**
 
+- **Logistic Regression**: AUC = 0.743 (good discriminatory power)
+- **Decision Tree**: AUC = 0.526 (near-random performance)
+- **Recommended Model**: Logistic Regression demonstrates superior performance
+
+**Analysis includes:**
 - Optimal hyperparameter identification through cross-validation
-- Performance metrics comparison across both models
+- Performance metrics comparison across both models  
 - ROC curve analysis for classification threshold evaluation
 - Detailed classification reports with per-class statistics
 
@@ -171,7 +179,7 @@ The report complements the Jupyter notebook by providing theoretical context, de
 
 ### Usage Instructions
 
-1. Open the Jupyter notebook `assignment01_DAMO-640-10.ipynb`
+1. Open the Jupyter notebook `assignment01_DAMO-640-10_FINAL_REVISED.ipynb`
 2. Run cells sequentially to reproduce the analysis
 3. All required datasets are loaded automatically from the UCI repository
 4. Modify hyperparameters or add additional models as needed for experimentation

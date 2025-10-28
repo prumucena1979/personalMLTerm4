@@ -1,6 +1,7 @@
 # Machine Learning Assignment Requirements
 # DAMO-640-10 Fall 2025 - Assignment 1
 # Supervised Learning (Haberman's Survival)
+# Updated: October 2025 for FINAL_REVISED notebook
 
 # Core data manipulation and analysis
 pandas>=2.0.0

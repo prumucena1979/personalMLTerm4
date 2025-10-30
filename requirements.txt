@@ -1,21 +1,26 @@
 # Machine Learning Assignment Requirements
 # DAMO-640-10 Fall 2025 - Assignment 1
-# Supervised Learning (Haberman's Survival)
-# Updated: October 2025 for FINAL_REVISED notebook
+# Supervised Learning (Haberman's Survival Dataset)
+# Group 03: Katragadda, Oshiro, Pemmasani, Prumucena
+# Updated: October 30, 2025 for FINAL_REVISED notebook
 
 # Core data manipulation and analysis
-pandas>=2.0.0
-numpy>=1.24.0
+pandas>=2.0.0        # DataFrame operations and data loading from UCI repository
+numpy>=1.24.0         # Numerical computing and array operations
 
 # Machine learning library
-scikit-learn>=1.3.0
+scikit-learn>=1.3.0   # ML algorithms (LogisticRegression, DecisionTree, PCA, GridSearchCV)
+                      # Metrics (accuracy_score, precision_score, recall_score, f1_score, roc_curve, roc_auc_score)
+                      # Preprocessing (StandardScaler, train_test_split)
 
 # Data visualization
-matplotlib>=3.7.0
+matplotlib>=3.7.0     # Plotting library for ROC curves, PCA plots, F1-Score comparisons
+                      # Includes polar plots for radar charts and enhanced label positioning
 
-# Jupyter notebook environment (optional - for interactive development)
-jupyter>=1.0.0
-ipykernel>=6.25.0
+# Jupyter notebook environment (required for interactive development)
+jupyter>=1.0.0        # Interactive notebook environment
+ipykernel>=6.25.0     # Python kernel for Jupyter notebooks
 
-# Additional useful packages for data science. 
-seaborn>=0.12.0  # Enhanced statistical visualization (optional)
+# Additional packages for enhanced analysis
+seaborn>=0.12.0       # Statistical visualization (optional enhancement)
+warnings              # Built-in module for filtering warnings (already included in Python)

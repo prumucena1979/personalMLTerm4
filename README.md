@@ -6,8 +6,14 @@
 
 This project implements supervised learning algorithms to analyse the Haberman's Survival dataset from the UCI Machine Learning Repository. The analysis focuses on predicting patient survival rates following breast cancer surgery based on patient characteristics.
 
-**Author:** Fabio dos Santos Prumucena (NF1002000)  
+**Group 03:**  
+- **Katragadda, Jayasri**
+- **Oshiro, Renato Hiroyuki**
+- **Pemmasani, Sridevi**
+- **Prumucena, Fabio**
+
 **Course:** DAMO-640-10 Fall 2025  
+**Institution:** University of Niagara Falls Canada  
 **Dataset:** Haberman's Survival (UCI)  
 **Assignment:** Assignment 1 — Supervised Learning
 
@@ -66,7 +72,8 @@ Two supervised learning algorithms were implemented with systematic hyperparamet
 - **Cross-validation**: 5-fold stratified for hyperparameter selection
 - **Performance metrics**: Accuracy, Precision, Recall, F1-score, AUC-ROC
 - **ROC analysis**: Comparative ROC curves for model performance visualisation
-- **Classification reports**: Detailed per-class performance metrics
+- **Multi-metric visualization**: F1-Score comparison with radar charts for comprehensive analysis
+- **Enhanced PCA analysis**: Dual plots showing cumulative and individual component variance contribution
 
 ### Key Technologies and Libraries
 
@@ -150,12 +157,15 @@ The analysis provides comprehensive comparison between Logistic Regression and D
 - **Logistic Regression**: AUC = 0.743 (good discriminatory power)
 - **Decision Tree**: AUC = 0.526 (near-random performance)
 - **Recommended Model**: Logistic Regression demonstrates superior performance
+- **Data Split**: 75% training / 25% testing with stratified sampling (random_state=42)
 
 **Analysis includes:**
 - Optimal hyperparameter identification through cross-validation
-- Performance metrics comparison across both models  
+- Performance metrics comparison across both models (Accuracy, Precision, Recall, F1-Score, AUC)
 - ROC curve analysis for classification threshold evaluation
-- Detailed classification reports with per-class statistics
+- Enhanced PCA visualization with dual plots (cumulative + individual component variance)
+- F1-Score focused comparison with radar chart visualization
+- Professional-grade charts with optimized label positioning and contrast
 
 ### Data Source
 
@@ -196,7 +206,12 @@ Potential improvements and extensions:
 
 ### Contact
 
-For questions or collaboration opportunities, please contact:
-**Fabio dos Santos Prumucena** - NF1002000 - fabio.dos2000@myunfc.ca
+**Group 03 Team Members:**
+- **Katragadda, Jayasri**
+- **Oshiro, Renato Hiroyuki** 
+- **Pemmasani, Sridevi**
+- **Prumucena, Fabio** - fabio.dos2000@myunfc.ca
+
+For questions or collaboration opportunities, please contact any group member.
 
 *This project demonstrates practical application of machine learning techniques for healthcare data analysis, emphasising proper methodology, evaluation metrics, and reproducible results.*
